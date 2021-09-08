@@ -1,4 +1,5 @@
 import 'package:chats_app/pages/HomePage.dart';
+import 'package:chats_app/pages/DetailPage.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,11 @@ class MyApps extends StatelessWidget {
       theme: ThemeData(
         fontFamily: 'Poppins'
       ),
-      home: HomePage(),
+      routes: {
+      '/' : (context) => HomePage(),
+      '/detail' : (context) => Detail(),
+      }
+      ,
     );
   }
 }

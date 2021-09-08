@@ -6,6 +6,7 @@ Color secondaryBlue = Color(0xff9ED0FF);
 Color textColor = Color(0xff2C3A59);
 Color secondaryTextColor = Color(0xff808BA2);
 Color backgroundChat = Color(0xff505C6B);
+Color conversation = Color(0xffEBEFF3);
 Color greenColor = Color(0xff29CB9E);
 
 TextStyle nameText =
@@ -13,6 +14,9 @@ TextStyle nameText =
 
 TextStyle secondaryNameText =
     TextStyle(color: secondaryBlue, fontSize: 16, fontWeight: FontWeight.w300);
+
+TextStyle conversationTetxt =
+    TextStyle(color: conversation, fontSize: 16, fontWeight: FontWeight.w300);
 
 TextStyle mainTitleTetxt =
     TextStyle(color: textColor, fontSize: 16, fontWeight: FontWeight.w600);

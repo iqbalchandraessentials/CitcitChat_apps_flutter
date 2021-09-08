@@ -19,7 +19,8 @@ class Group extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding( padding: EdgeInsets.only(top: 16),
+      child: Padding(
+        padding: EdgeInsets.only(top: 16),
         child: Row(
           children: [
             Image.asset(
@@ -33,14 +34,15 @@ class Group extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+              
                 Text(
                   name,
                   style: mainTitleTetxt,
                 ),
                 Text(
                   text,
-                  style: unread ? secondaryGreytxt :  secondaryBlackTetxt,
-                ) ,
+                  style: unread ? secondaryGreytxt : secondaryBlackTetxt,
+                ),
               ],
             ),
             Spacer(),

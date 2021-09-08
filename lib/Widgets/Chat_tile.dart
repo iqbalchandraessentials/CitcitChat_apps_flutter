@@ -19,36 +19,42 @@ class Chats extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Padding( padding: EdgeInsets.only(top: 16),
-        child: Row(
-          children: [
-            Image.asset(
-              imageUrl,
-              height: 55,
-              width: 55,
-            ),
-            SizedBox(
-              width: 12,
-            ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  name,
-                  style: mainTitleTetxt,
-                ),
-                Text(
-                  text,
-                  style: unread ? secondaryGreytxt :  secondaryBlackTetxt,
-                ) ,
-              ],
-            ),
-            Spacer(),
-            Text(
-              time,
-              style: secondaryGreytxt,
-            ),
-          ],
+      child: Padding(
+        padding: EdgeInsets.only(top: 16),
+        child: GestureDetector(
+          onTap: () {
+            Navigator.pushNamed(context, '/detail');
+          },
+          child: Row(
+            children: [
+              Image.asset(
+                imageUrl,
+                height: 55,
+                width: 55,
+              ),
+              SizedBox(
+                width: 12,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    name,
+                    style: mainTitleTetxt,
+                  ),
+                  Text(
+                    text,
+                    style: unread ? secondaryGreytxt : secondaryBlackTetxt,
+                  ),
+                ],
+              ),
+              Spacer(),
+              Text(
+                time,
+                style: secondaryGreytxt,
+              ),
+            ],
+          ),
         ),
       ),
     );

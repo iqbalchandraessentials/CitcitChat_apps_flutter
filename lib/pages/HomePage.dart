@@ -1,4 +1,4 @@
-import 'package:chats_app/Widgets/Chat_tile%20copy.dart';
+import 'package:chats_app/Widgets/Group_tile.dart';
 import 'package:chats_app/Widgets/Chat_tile.dart';
 import 'package:chats_app/theme.dart';
 import 'package:flutter/material.dart';
@@ -38,7 +38,7 @@ class HomePage extends StatelessWidget {
             borderRadius: BorderRadius.vertical(
               top: Radius.circular(40),
             )),
-             child: Column(
+            child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start, children: 
                   [
                   Text(
